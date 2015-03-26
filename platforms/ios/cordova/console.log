@@ -25,3 +25,42 @@ To disable web storage backup to iCloud, set the BackupWebStorage preference to 
 
 2015-03-26 01:30:26.650 be loyal[8480:246755] Resetting plugins due to page load.
 2015-03-26 01:30:27.132 be loyal[8480:246755] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/90CD5B71-B5F2-4474-AB74-563251D11A76/data/Containers/Bundle/Application/9ADD8A71-D6A0-450A-AFFB-C5DD84E9DAB7/be%20loyal.app/www/index.html
+2015-03-26 09:41:41.782 be loyal[834:25594] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-26 09:41:41.784 be loyal[834:25594] Multi-tasking -> Device: YES, App: YES
+2015-03-26 09:41:41.806 be loyal[834:25594] Unlimited access to network resources
+2015-03-26 09:41:41.819 be loyal[834:25594] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-03-26 09:41:42.515 be loyal[834:25594] Resetting plugins due to page load.
+2015-03-26 09:41:43.022 be loyal[834:25594] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/90CD5B71-B5F2-4474-AB74-563251D11A76/data/Containers/Bundle/Application/BC1478D5-2413-43BF-8E57-F3B983434AEB/be%20loyal.app/www/index.html
+2015-03-26 10:30:04.961 be loyal[1430:56284] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-26 10:30:04.964 be loyal[1430:56284] Multi-tasking -> Device: YES, App: YES
+2015-03-26 10:30:04.980 be loyal[1430:56284] Unlimited access to network resources
+2015-03-26 10:30:04.993 be loyal[1430:56284] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-03-26 10:30:05.670 be loyal[1430:56284] Resetting plugins due to page load.
+2015-03-26 10:30:06.175 be loyal[1430:56284] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/90CD5B71-B5F2-4474-AB74-563251D11A76/data/Containers/Bundle/Application/A8F11CEB-3667-4756-B706-154D162ABED9/be%20loyal.app/www/index.html
+2015-03-26 11:07:15.794 be loyal[2996:76340] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-26 11:07:15.795 be loyal[2996:76340] Multi-tasking -> Device: YES, App: YES
+2015-03-26 11:07:15.814 be loyal[2996:76340] Unlimited access to network resources
+2015-03-26 11:07:15.829 be loyal[2996:76340] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-03-26 11:07:16.574 be loyal[2996:76340] Resetting plugins due to page load.
+2015-03-26 11:07:17.106 be loyal[2996:76340] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/90CD5B71-B5F2-4474-AB74-563251D11A76/data/Containers/Bundle/Application/4E669655-C667-4777-A5A4-AC46B2F43E5B/be%20loyal.app/www/index.html
