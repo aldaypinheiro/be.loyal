@@ -1,0 +1,27 @@
+2015-03-26 01:23:54.140 be loyal[7807:240861] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-26 01:23:54.141 be loyal[7807:240861] Multi-tasking -> Device: YES, App: YES
+2015-03-26 01:23:54.143 be loyal[7807:240861] Unlimited access to network resources
+2015-03-26 01:23:54.147 be loyal[7807:240861] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-03-26 01:23:54.418 be loyal[7807:240861] Resetting plugins due to page load.
+2015-03-26 01:23:54.782 be loyal[7807:240861] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/90CD5B71-B5F2-4474-AB74-563251D11A76/data/Containers/Bundle/Application/3880FFA8-361C-428F-BED3-2A246280962C/be%20loyal.app/www/index.html
+2015-03-26 01:27:46.872 be loyal[7807:243977] Terminating since there is no system app.
+2015-03-26 01:30:25.931 be loyal[8480:246755] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-26 01:30:25.932 be loyal[8480:246755] Multi-tasking -> Device: YES, App: YES
+2015-03-26 01:30:25.948 be loyal[8480:246755] Unlimited access to network resources
+2015-03-26 01:30:25.965 be loyal[8480:246755] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-03-26 01:30:26.650 be loyal[8480:246755] Resetting plugins due to page load.
+2015-03-26 01:30:27.132 be loyal[8480:246755] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/90CD5B71-B5F2-4474-AB74-563251D11A76/data/Containers/Bundle/Application/9ADD8A71-D6A0-450A-AFFB-C5DD84E9DAB7/be%20loyal.app/www/index.html

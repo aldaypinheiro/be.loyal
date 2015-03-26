@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="uk.edu.uwl.loyalty" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <icon density="ldpi" src="res/android/drawable-ldpi/ic_launcher.png" />
+    <icon density="mdpi" src="res/android/drawable-mdpi/ic_launcher.png" />
+    <icon density="hdpi" src="res/android/drawable-hdpi/ic_launcher.png" />
+    <icon density="xhdpi" src="res/android/drawable-xhdpi/ic_launcher.png" />
+    <name>be loyal</name>
+    <description>
+        Be Loyal never has been so easy. Keep all yours loyalties cards and cupoms in one place, handy all the time.
+    </description>
+    <author email="aldaypinheiro@yahoo.com.br" href="">
+    	Jose Alday Pinheiro Alves
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
