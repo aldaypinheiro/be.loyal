@@ -27,7 +27,7 @@
     <div data-role="page" data-theme='b'>
         <div data-role="panel" data-display="push" id="left-menu" data-theme="b">
             <ul data-role="listview">
-                <li data-icon='false'><a href="index.html" data-ajax="false"><i class='lIcon fa fa-angle-left'></i>Back</a></li>
+                <li data-icon='false'><a href="index.html" data-ajax="false"><i class='lIcon fa fa-home'></i>Home</a></li>
             </ul>
             <div data-role="collapsible" data-content-theme="b"  style="font-color: black;">
                 <h4>Add</h4>
@@ -57,15 +57,15 @@
             <form>
                 <ul data-role="listview" data-inset="true">
                     <li data-role="fieldcontain">
-                        <label for="name2b">Company:</label>
-                        <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Type your text here...">
+                        <label for="company">Company:</label>
+                        <input type="text" name="company" id="company" value="" data-clear-btn="true" placeholder="Company name" required>
                     </li>
                     <li data-role="fieldcontain">
-                        <label for="name2b">Description:</label>
-                        <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Type your text here...">
+                        <label for="description">Description:</label>
+                        <input type="text" name="description" id="description" value="" data-clear-btn="true" placeholder="Little description" required>
                     </li>
                     <li data-role="fieldcontain">
-                        <label for="name2b">Loyalty Card:</label>
+                        <label for="loyalty-card">Loyalty Card:</label>
                         <div align="center">
                             <img src="http://placehold.it/150&text=QR+Code">
                             &nbsp;&nbsp;
@@ -74,19 +74,79 @@
                     </li>            
                     <div align="center">
                         <li>
-                            <button type="reset" data-inline='true'><i class='lIcon fa fa-times'></i>Back</button>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <button type="submit" data-inline='true'><i class='lIcon fa fa-check'></i>Add</button>
+                            <button type="reset" data-inline='true'><i class='lIcon fa fa-times'></i>Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button id="submit" data-inline='true'><i class='lIcon fa fa-check'></i>Add</button>
                         </li>
                     </div>
                 </ul>
             </form>
         </div>
     </div>
+    <script type="text/javascript" src="be-loyal.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="barcodescanner.js"></script>
     <script type="text/javascript" src="js/barcode.js"></script>
     <script type="text/javascript">
-        app.initialize();
+        //app.initialize();
+    </script>
+    <script type="text/javascript" src="js/database.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var decoded = '', format = '', cancelled = true;
+
+            $("#scan").click(function() {
+                var scanner = cordova.require("cordova/plugin/BarcodeScanner");
+
+                scanner.scan(function (result) { 
+
+                    decoded = result.text;
+                    format = result.format;
+                    cancelled = result.cancelled;
+
+                    alert("We got a barcode\n" + 
+                        "Result: " + decoded + "\n" + 
+                        "Format: " + format + "\n" + 
+                        "Cancelled: " + cancelled);
+
+                    console.log("Scanner result: \n" +
+                        "text: " + result.text + "\n" +
+                        "format: " + result.format + "\n" +
+                        "cancelled: " + result.cancelled + "\n");
+
+                    //document.getElementById("info").innerHTML = result.text;
+                    
+                    console.log(result);
+                    
+                    /*
+                    if (args.format == "QR_CODE") {
+                    window.plugins.childBrowser.showWebPage(args.text, { showLocationBar: false });
+                    }
+                    */
+
+                }, function (error) { 
+
+                    console.log("Scanning failed: ", error); 
+
+                });
+
+            });
+            $("#submit").click(function(){
+                var company = '', description = '';
+
+                company = $("#company").val();
+
+                description = $("#description").val();
+
+                alert("Submit: \n" +
+                    "company: " + company + "\n" +
+                    "description: " + description + "\n" +
+                    "decoded: " + decoded + "\n" +
+                    "format: " + format + "\n" +
+                    "cancelled: " + cancelled + ".");
+
+                //insert({'tablename':'loyalty.card', 'values':{'company':"'pravesh'", 'description':"'kumar'", 'result':"'kumar'", 'format':"'kumar'"}});
+            });
+        });
     </script>
     </body>
 </html>
