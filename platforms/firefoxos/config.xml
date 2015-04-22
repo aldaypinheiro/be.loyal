@@ -13,4 +13,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <feature name="Camera">
+        <param name="firefoxos-package" value="Camera" />
+    </feature>
 </widget>
