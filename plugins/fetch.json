@@ -10,5 +10,11 @@
             "type": "registry",
             "id": "com.phonegap.plugins.barcodescanner"
         }
+    },
+    "com.msopentech.websql": {
+        "source": {
+            "type": "registry",
+            "id": "com.msopentech.websql"
+        }
     }
 }

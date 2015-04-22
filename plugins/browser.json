@@ -27,6 +27,9 @@
         },
         "com.phonegap.plugins.barcodescanner": {
             "PACKAGE_NAME": "uk.edu.uwl.loyalty"
+        },
+        "com.msopentech.websql": {
+            "PACKAGE_NAME": "uk.edu.uwl.loyalty"
         }
     },
     "dependent_plugins": {}

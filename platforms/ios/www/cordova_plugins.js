@@ -40,7 +40,8 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "org.apache.cordova.camera": "0.3.6",
-    "com.phonegap.plugins.barcodescanner": "2.0.1"
+    "com.phonegap.plugins.barcodescanner": "2.0.1",
+    "com.msopentech.websql": "0.0.7"
 }
 // BOTTOM OF METADATA
 });
