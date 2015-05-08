@@ -120,7 +120,8 @@ function select(s){
 		db.transaction(function (tx){ tx.executeSql(sql,[],function(tx, result){
 			for(var i = 0; i < result.rows.length; i++) {
 			    var data = result.rows.item(i);
-			    console.log(data);			    
+			    console.log(data);	
+			    return result;		    
 			}
 		},sqlError); 
 	});

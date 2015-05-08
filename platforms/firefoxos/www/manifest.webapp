@@ -4,11 +4,10 @@
         "*"
     ],
     "version": "0.0.1",
-    "name": "LoyaltyCard",
-    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "name": "be loyal",
+    "description": "Be Loyal never has been so easy. Keep all yours loyalties cards and cupoms in one place, handy all the time.",
     "developer": {
-        "name": "Apache Cordova Team",
-        "url": "http://cordova.io"
+        "name": "Jose Alday Pinheiro Alves"
     },
     "icons": {}
 }

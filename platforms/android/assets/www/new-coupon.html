@@ -22,7 +22,6 @@
         <!-- jQuery / jQueryMobile Scripts -->
         <script src="js/jquery-1.9.1.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
-        <script src="js/my.js"></script>
     </head>
     <body>
     <div data-role="page" data-theme='b'>
@@ -58,41 +57,112 @@
             <form>
                 <ul data-role="listview" data-inset="true">
                     <li data-role="fieldcontain">
-                        <label for="name2b">Company:</label>
-                        <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Type your text here...">
+                        <label for="company">Company:</label>
+                        <input type="text" name="company" id="company" value="" data-clear-btn="true" placeholder="Company name" required>
+                    </li>
+                    <!-- <li data-role="fieldcontain">
+                        <label for="description">Description:</label>
+                        <input type="text" name="description" id="description" value="" data-clear-btn="true" placeholder="Little description" required>
+                    </li> -->
+                    <li data-role="fieldcontain">
+                        <label for="additional">Additional Information:</label>
+                        <input type="text" name="additional" id="additional" value="" data-clear-btn="true" placeholder="Additional Information" required>
                     </li>
                     <li data-role="fieldcontain">
-                        <label for="name2b">Description:</label>
-                        <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Type your text here...">
-                    </li>
-                    <li data-role="fieldcontain">
-                        <label for="name2b">Additional Information:</label>
-                        <input type="text" name="name2" id="name2b" value="" data-clear-btn="true" placeholder="Type your text here...">
-                    </li>
-                    <div align="center">
-                        <li data-role="fieldcontain">
-                            <label for="name2b">Coupon:</label>
-                            <img src="http://placehold.it/150&text=QR+Code">
+                        <label for="loyalty-card">Coupon:</label>
+                        <div align="center">
+                            <img id="encoded" style="display: none;" src="http://placehold.it/75&text=Coupon">
                             &nbsp;&nbsp;
                             <a href="#" data-ajax="false" id="scan"><i class="fa fa-camera" style="font-size: 5em;"></i></a>
-                        </li>
-                    </div>
+                       </div>
+                    </li>            
                     <div align="center">
                         <li>
                             <button type="reset" data-inline='true'><i class='lIcon fa fa-times'></i>Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <button type="submit" data-inline='true'><i class='lIcon fa fa-check'></i>Add</button>
+                            <button id="submit" data-inline='true'><i class='lIcon fa fa-check'></i>Add</button>
                         </li>
                     </div>
                 </ul>
             </form>
         </div>
+        
+        <a id="show-success-message" href='#successMessage' data-rel='popup' data-position-to='window' data-role='button' data-icon='external-link' data-transition='pop' data-inline='true' style="display: none"></a>
+        
+        <div data-role='popup' id='successMessage' data-theme='b'>
+            <div data-role='header' data-theme='b'>
+                <h1 id="message-title">Success</h1>
+            </div>
+            <div data-role='content' data-theme='b'>
+                <p id="message-content">Your coupon was added successfully.</p>
+                <div class='showastabs center nobg'>
+                    <a href='index.html' data-iconpos='left' data-role='button' data-inline='true'>Okay</a>
+                </div>
+            </div>
+        </div>
+
+        <a id="show-error-message" href='#errorMessage' data-rel='popup' data-position-to='window' data-role='button' data-icon='external-link' data-transition='pop' data-inline='true' style="display: none"></a>
+        
+        <div data-role='popup' id='errorMessage' data-theme='b'>
+            <div data-role='header' data-theme='b'>
+                <h1 id="message-title">Error</h1>
+            </div>
+            <div data-role='content' data-theme='b'>
+                <p id="message-content">Please, remember of fill all fields and scan a coupon.</p>
+                <div align="center" class='showastabs center nobg'>
+                    <a href='#' data-rel='back' data-iconpos='left' data-role='button' data-inline='true'>Okay</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <script type="text/javascript" src="be-loyal.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="barcodescanner.js"></script>
-    <script type="text/javascript" src="js/barcode.js"></script>
     <script type="text/javascript">
-        app.initialize();
+        $(document).ready(function() {
+            var scanner = null;
+            var decoded = '', format = '', cancelled = true;
+
+            $("#scan").click(function() {
+                scanner = cordova.require("cordova/plugin/BarcodeScanner");
+
+                scanner.scan(function (result) { 
+
+                    decoded = result.text;
+                    format = result.format;
+                    cancelled = result.cancelled;
+
+                    console.log("Scanner result: \n" +
+                        "text: " + decoded + "\n" +
+                        "format: " + format + "\n" +
+                        "cancelled: " + cancelled + "\n");
+
+                    $("#encoded").css("display", "");
+
+                }, function (error) { 
+
+                    console.log("Scanning failed: ", error); 
+
+                });
+
+            });
+            $("#cancel").click(function() {
+                scanner = null;
+                decoded = '';
+                format = '';
+                cancelled = true;
+            });
+            $("#submit").click(function(){
+                var company = '', description = '';
+
+                company = $("#company").val();
+
+                if (cancelled == false && company != '') {
+                    $("#show-success-message").trigger("click");
+                } else {
+                    $("#show-error-message").trigger("click");
+                }
+
+                return false;
+            });
+        });
     </script>
     </body>
 </html>

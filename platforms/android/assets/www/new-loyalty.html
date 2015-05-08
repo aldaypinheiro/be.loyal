@@ -53,6 +53,7 @@
                 <i style="font-size: 0.9em;" class='fa fa-paw'></i>
             </h2>
         </div>
+
         <div data-role="content">
             <form>
                 <ul data-role="listview" data-inset="true">
@@ -60,14 +61,14 @@
                         <label for="company">Company:</label>
                         <input type="text" name="company" id="company" value="" data-clear-btn="true" placeholder="Company name" required>
                     </li>
-                    <li data-role="fieldcontain">
+                    <!-- <li data-role="fieldcontain">
                         <label for="description">Description:</label>
                         <input type="text" name="description" id="description" value="" data-clear-btn="true" placeholder="Little description" required>
-                    </li>
+                    </li> -->
                     <li data-role="fieldcontain">
                         <label for="loyalty-card">Loyalty Card:</label>
                         <div align="center">
-                            <img src="http://placehold.it/150&text=QR+Code">
+                            <img id="encoded" style="display: none;" src="http://placehold.it/75&text=QR+Code">
                             &nbsp;&nbsp;
                             <a href="#" data-ajax="false" id="scan"><i class="fa fa-camera" style="font-size: 5em;"></i></a>
                        </div>
@@ -81,21 +82,44 @@
                 </ul>
             </form>
         </div>
+
+        <a id="show-success-message" href='#successMessage' data-rel='popup' data-position-to='window' data-role='button' data-icon='external-link' data-transition='pop' data-inline='true' style="display: none"></a>
+        
+        <div data-role='popup' id='successMessage' data-theme='b'>
+            <div data-role='header' data-theme='b'>
+                <h1 id="message-title">Success</h1>
+            </div>
+            <div data-role='content' data-theme='b'>
+                <p id="message-content">Your loyalty card was added successfully.</p>
+                <div class='showastabs center nobg'>
+                    <a href='index.html' data-iconpos='left' data-role='button' data-inline='true'>Okay</a>
+                </div>
+            </div>
+        </div>
+
+        <a id="show-error-message" href='#errorMessage' data-rel='popup' data-position-to='window' data-role='button' data-icon='external-link' data-transition='pop' data-inline='true' style="display: none"></a>
+        
+        <div data-role='popup' id='errorMessage' data-theme='b'>
+            <div data-role='header' data-theme='b'>
+                <h1 id="message-title">Error</h1>
+            </div>
+            <div data-role='content' data-theme='b'>
+                <p id="message-content">Please, remember of fill all fields and scan a loyalty card.</p>
+                <div align="center" class='showastabs center nobg'>
+                    <a href='#' data-rel='back' data-iconpos='left' data-role='button' data-inline='true'>Okay</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <script type="text/javascript" src="be-loyal.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="barcodescanner.js"></script>
-    <script type="text/javascript" src="js/barcode.js"></script>
-    <script type="text/javascript">
-        //app.initialize();
-    </script>
     <script type="text/javascript" src="js/database.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
+            var scanner = null;
             var decoded = '', format = '', cancelled = true;
 
             $("#scan").click(function() {
-                var scanner = cordova.require("cordova/plugin/BarcodeScanner");
+                scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
                 scanner.scan(function (result) { 
 
@@ -103,48 +127,36 @@
                     format = result.format;
                     cancelled = result.cancelled;
 
-                    alert("We got a barcode\n" + 
-                        "Result: " + decoded + "\n" + 
-                        "Format: " + format + "\n" + 
-                        "Cancelled: " + cancelled);
-
                     console.log("Scanner result: \n" +
-                        "text: " + result.text + "\n" +
-                        "format: " + result.format + "\n" +
-                        "cancelled: " + result.cancelled + "\n");
+                        "text: " + decoded + "\n" +
+                        "format: " + format + "\n" +
+                        "cancelled: " + cancelled + "\n");
 
-                    //document.getElementById("info").innerHTML = result.text;
-                    
-                    console.log(result);
-                    
-                    /*
-                    if (args.format == "QR_CODE") {
-                    window.plugins.childBrowser.showWebPage(args.text, { showLocationBar: false });
-                    }
-                    */
-
+                    $("#encoded").css("display", "");
                 }, function (error) { 
-
                     console.log("Scanning failed: ", error); 
-
                 });
-
             });
+
+            $("#cancel").click(function() {
+                scanner = null;
+                decoded = '';
+                format = '';
+                cancelled = true;
+            });
+
             $("#submit").click(function(){
                 var company = '', description = '';
 
                 company = $("#company").val();
 
-                description = $("#description").val();
+                if (cancelled == false && company != '') {
+                    $("#show-success-message").trigger("click");
+                } else {
+                    $("#show-error-message").trigger("click");
+                }
 
-                alert("Submit: \n" +
-                    "company: " + company + "\n" +
-                    "description: " + description + "\n" +
-                    "decoded: " + decoded + "\n" +
-                    "format: " + format + "\n" +
-                    "cancelled: " + cancelled + ".");
-
-                //insert({'tablename':'loyalty.card', 'values':{'company':"'pravesh'", 'description':"'kumar'", 'result':"'kumar'", 'format':"'kumar'"}});
+                return false;
             });
         });
     </script>

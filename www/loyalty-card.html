@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>be loyal</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+
+		<!-- nativeDroid core CSS -->
+		<link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+		<link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
+
+		<!-- nativeDroid: Color Schemes -->
+		<link rel="stylesheet" href="css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
+
+		<!-- jQuery / jQueryMobile Scripts -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+	<div data-role="page" data-theme='b'>
+
+		<div data-role="panel" data-display="push" id="left-menu" data-theme="b">
+			<ul data-role="listview">
+                <li data-icon='false'><a href="index.html" data-ajax="false"><i class='lIcon fa fa-home'></i>Home</a></li>
+            </ul>
+			<div data-role="collapsible" data-content-theme="b"  style="font-color: black;">
+				<h4>Add</h4>
+				<ul data-role="listview">
+					<li data-icon='false'>
+						<font color="#9c0"><a href="new-loyalty.html" data-ajax="false"><i class='lIcon fa fa-credit-card'></i>Loyalty Card</a></font>
+					</li>
+					<li data-icon='false'>
+						<font color="#9c0"><a href="new-coupon.html" data-ajax="false"><i class='lIcon fa fa-barcode'></i>Coupon</a></font>
+					</li>
+				</ul>
+			</div>
+			<ul data-role="listview">
+				<li data-icon='false'><a href="#"><i class='lIcon fa fa-gears'></i>Settings</a></li>
+			</ul>
+		</div>
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+			<a href='#left-menu'><i class='fa fa-bars'></i></a>
+			<h2 style="text-align: center;">
+				be loyal
+				&nbsp;
+				<i style="font-size: 0.9em;" class='fa fa-paw'></i>
+			</h2>
+		</div>
+		<div data-role="header" data-tap-toggle="false" data-theme='b'>
+			<h2 style="text-align: center; font-size: 2em;">
+				<i class="fa fa-cutlery"></i>
+				Restaurant
+			</h2>
+		</div>
+		<div data-role="content">
+			<div style="width: auto; height:auto;">
+				<img style="display: block; margin-left: auto; margin-right: auto; margin-top: 10%; margin-bottom: 10%;" width="150" height="150" src="img/qrcode.png">
+				<div align="center">
+					<form>
+						<button id="redirect" type="submit" data-inline='true'><i class='lIcon fa fa-home'></i>Home</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="new.html" data-ajax="false"><i class='blIcon fa fa-plus'></i></a></li>
+					<li><a href="index.php"><i class='blIcon fa fa-user'></i></a></li>
+					<li><a href="index.php"><i class='blIcon fa fa-share'></i></a></li>
+					<li><a href="index.php"><i class='blIcon fa fa-cogs'></i></a></li>
+				</ul>
+			</div>
+		</div> --> 
+		<!-- function, stress, user acceptance -->
+	</div>
+	<a href="index.html" id="home" style="display: none;"></a>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#redirect").click(function(){
+			$("#home").trigger("click");
+			return false;
+		});
+	});
+	</script>
+	</body>
+</html>

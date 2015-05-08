@@ -22,56 +22,75 @@
 		<!-- jQuery / jQueryMobile Scripts -->
 		<script src="js/jquery-1.9.1.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
-		<script src="js/my.js"></script>
 	</head>
 	<body>
 	<div data-role="page" data-theme='b'>
-		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
-			<h1>be loyal</h1>
-			<a href="#" data-ajax='false' target='_blank'><i class='fa fa-paw'></i></a>
+		<div data-role="panel" data-display="push" id="left-menu" data-theme="b">
+			<div data-role="collapsible" data-content-theme="b"  style="font-color: black;">
+				<h4>Add</h4>
+				<ul data-role="listview">
+					<li data-icon='false'>
+						<font color="#9c0"><a href="new-loyalty.html" data-ajax="false"><i class='lIcon fa fa-credit-card'></i>Loyalty Card</a></font>
+					</li>
+					<li data-icon='false'>
+						<font color="#9c0"><a href="new-coupon.html" data-ajax="false"><i class='lIcon fa fa-barcode'></i>Coupon</a></font>
+					</li>
+				</ul>
+			</div>
+			<ul data-role="listview">
+				<li data-icon='false'><a href="settings.html" data-ajax="false"><i class='lIcon fa fa-gears'></i>Settings</a></li>
+			</ul>
 		</div>
+
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+			<a href='#left-menu'><i class='fa fa-bars'></i></a>
+			<h2 style="text-align: center;">
+				be loyal
+				&nbsp;
+				<i style="font-size: 0.9em;" class='fa fa-paw'></i>
+			</h2>
+		</div>
+
 		<div data-role="content">
 			<ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b">
-				<li>
+				<!-- <li>
 					<input data-type="search" placeholder="Search" data-lastval="">
-				</li>
+				</li> -->
 				<li data-role="list-divider">Loyalty Cards</li>
 				<li class="ui-grid-b">
 					<div class="ui-responsive ui-block-a">
-						<a href="index.php">
-							<img src="http://www.placehold.it/100x100&text=Star+Market">
+						<a href="loyalty-card.html" data-ajax="false">
+							<img src="img/star-logo.png" width="100" height="100">
 							<h2>Star Market</h2>
 						</a>
 					</div>
 					<div class="ui-responsive ui-block-b">
-						<a href="index.php">
-							<img src="http://www.placehold.it/100x100&text=Petro+Station">
+						<a href="loyalty-card.html" data-ajax="false">
+							<img src="img/petro-logo.png" width="100" height="100">
 							<h2>Petro Station</h2>
 						</a>
 					</div>
 					<div class="ui-responsive ui-block-c">
-						<a href="index.php">
-							<img src="http://www.placehold.it/100x100&text=Eat+Restaurant">
+						<a href="loyalty-card.html" data-ajax="false">
+							<img src="img/restaurant-logo.png" width="100" height="100">
 							<h2>Eat Restaurant</h2>
 						</a>
 					</div>
-				</li>
-				<li class="ui-grid-b">
 					<div class="ui-responsive ui-block-a">
-						<a href="index.php">
-							<img src="http://www.placehold.it/100x100&text=Star+Market">
+						<a href="loyalty-card.html" data-ajax="false">
+							<img src="img/star-logo.png" width="100" height="100">
 							<h2>Star Market</h2>
 						</a>
 					</div>
 					<div class="ui-responsive ui-block-b">
-						<a href="index.php">
-							<img src="http://www.placehold.it/100x100&text=Petro+Station">
+						<a href="loyalty-card.html" data-ajax="false">
+							<img src="img/petro-logo.png" width="100" height="100">
 							<h2>Petro Station</h2>
 						</a>
 					</div>
 					<div class="ui-responsive ui-block-c">
-						<a href="index.php">
-							<img src="http://www.placehold.it/100x100&text=Eat+Restaurant">
+						<a href="loyalty-card.html" data-ajax="false">
+							<img src="img/restaurant-logo.png" width="100" height="100">
 							<h2>Eat Restaurant</h2>
 						</a>
 					</div>
@@ -79,56 +98,46 @@
 				<li data-role="list-divider">Coupons</li>
 				<li class="ui-grid-b">
 					<div class="ui-responsive ui-block-a">
-						<a href="index.php">
-							<img src="http://www.placehold.it/100x100&text=Star+Market">
+						<a href="coupon.html" data-ajax="false">
+							<img src="img/star-logo.png" width="100" height="100">
 							<h2>Star Market</h2>
 						</a>
 					</div>
 					<div class="ui-responsive ui-block-b">
-						<a href="index.php">
-							<img src="http://www.placehold.it/100x100&text=Petro+Station">
+						<a href="coupon.html" data-ajax="false">
+							<img src="img/petro-logo.png" width="100" height="100">
 							<h2>Petro Station</h2>
 						</a>
 					</div>
 					<div class="ui-responsive ui-block-c">
-						<a href="index.php">
-							<img src="http://www.placehold.it/100x100&text=Eat+Restaurant">
+						<a href="coupon.html" data-ajax="false">
+							<img src="img/restaurant-logo.png" width="100" height="100">
 							<h2>Eat Restaurant</h2>
 						</a>
 					</div>
-				</li>
-				<li class="ui-grid-b">
 					<div class="ui-responsive ui-block-a">
-						<a href="index.php">
-							<img src="http://www.placehold.it/100x100&text=Star+Market">
+						<a href="coupon.html" data-ajax="false">
+							<img src="img/star-logo.png" width="100" height="100">
 							<h2>Star Market</h2>
 						</a>
 					</div>
 					<div class="ui-responsive ui-block-b">
-						<a href="index.php">
-							<img src="http://www.placehold.it/100x100&text=Petro+Station">
+						<a href="coupon.html" data-ajax="false">
+							<img src="img/petro-logo.png" width="100" height="100">
 							<h2>Petro Station</h2>
 						</a>
 					</div>
 					<div class="ui-responsive ui-block-c">
-						<a href="index.php">
-							<img src="http://www.placehold.it/100x100&text=Eat+Restaurant">
+						<a href="coupon.html" data-ajax="false">
+							<img src="img/restaurant-logo.png" width="100" height="100">
 							<h2>Eat Restaurant</h2>
 						</a>
 					</div>
 				</li>
 			</ul>
 		</div>
-		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
-			<div data-role="navbar">
-				<ul>
-					<li><a href="new.html"><i class='blIcon fa fa-plus'></i></a></li>
-					<li><a href="index.php"><i class='blIcon fa fa-user'></i></a></li>
-					<li><a href="index.php"><i class='blIcon fa fa-share'></i></a></li>
-					<li><a href="index.php"><i class='blIcon fa fa-cogs'></i></a></li>
-				</ul>
-			</div>
-		</div>
+		<!-- function, stress, user acceptance -->
 	</div>
+	<script type="text/javascript" src="js/database.js"></script>
 	</body>
 </html>

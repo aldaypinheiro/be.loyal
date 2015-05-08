@@ -90,3 +90,84 @@ To disable web storage backup to iCloud, set the BackupWebStorage preference to 
 
 2015-04-16 09:55:55.091 be loyal[8178:430826] Resetting plugins due to page load.
 2015-04-16 09:55:55.420 be loyal[8178:430826] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/90CD5B71-B5F2-4474-AB74-563251D11A76/data/Containers/Bundle/Application/ADB2E548-BE9F-4104-81E9-85C045CE12DA/be%20loyal.app/www/index.html
+2015-04-30 01:15:55.357 be loyal[3961:193573] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Data/Application/82E07C20-A117-454A-97C6-2BA073217581/Library/Cookies/Cookies.binarycookies
+2015-04-30 01:15:55.658 be loyal[3961:193573] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-30 01:15:55.659 be loyal[3961:193573] Multi-tasking -> Device: YES, App: YES
+2015-04-30 01:15:55.673 be loyal[3961:193573] Unlimited access to network resources
+2015-04-30 01:15:55.682 be loyal[3961:193573] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-30 01:15:56.765 be loyal[3961:193573] Resetting plugins due to page load.
+2015-04-30 01:15:57.735 be loyal[3961:193573] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Bundle/Application/21EABA49-9238-4898-889F-07D288B7CC34/be%20loyal.app/www/index.html
+2015-04-30 01:15:59.564 be loyal[3961:193573] Resetting plugins due to page load.
+2015-04-30 01:15:59.720 be loyal[3961:193573] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Bundle/Application/21EABA49-9238-4898-889F-07D288B7CC34/be%20loyal.app/www/loyalty-card.html
+2015-04-30 01:16:38.298 be loyal[4304:196167] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Data/Application/D8A149BE-DB36-42CB-8B99-6078F9C58B75/Library/Cookies/Cookies.binarycookies
+2015-04-30 01:16:38.440 be loyal[4304:196167] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-30 01:16:38.440 be loyal[4304:196167] Multi-tasking -> Device: YES, App: YES
+2015-04-30 01:16:38.442 be loyal[4304:196167] Unlimited access to network resources
+2015-04-30 01:16:38.445 be loyal[4304:196167] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-30 01:16:38.669 be loyal[4304:196167] Resetting plugins due to page load.
+2015-04-30 01:16:39.293 be loyal[4304:196167] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Bundle/Application/570B497B-C718-4626-8762-EB9175DD5CBA/be%20loyal.app/www/index.html
+2015-04-30 01:17:56.787 be loyal[4486:197587] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Data/Application/AE6A1E16-A839-486D-9185-6A36EE76DAD6/Library/Cookies/Cookies.binarycookies
+2015-04-30 01:17:56.855 be loyal[4486:197587] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-30 01:17:56.856 be loyal[4486:197587] Multi-tasking -> Device: YES, App: YES
+2015-04-30 01:17:56.857 be loyal[4486:197587] Unlimited access to network resources
+2015-04-30 01:17:56.859 be loyal[4486:197587] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-30 01:17:57.008 be loyal[4486:197587] Resetting plugins due to page load.
+2015-04-30 01:17:57.319 be loyal[4486:197587] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Bundle/Application/9A1C717D-59C6-4D36-A8BA-31376166E03D/be%20loyal.app/www/index.html
+2015-04-30 01:18:14.332 be loyal[4486:197587] Resetting plugins due to page load.
+2015-04-30 01:18:14.527 be loyal[4486:197587] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Bundle/Application/9A1C717D-59C6-4D36-A8BA-31376166E03D/be%20loyal.app/www/loyalty-card.html
+2015-04-30 10:53:29.377 be loyal[5457:227780] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Data/Application/618B87DE-46F1-46F8-BE33-A6ED76C6AB44/Library/Cookies/Cookies.binarycookies
+2015-04-30 10:53:29.762 be loyal[5457:227780] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-30 10:53:29.762 be loyal[5457:227780] Multi-tasking -> Device: YES, App: YES
+2015-04-30 10:53:29.793 be loyal[5457:227780] Unlimited access to network resources
+2015-04-30 10:53:29.806 be loyal[5457:227780] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-30 10:53:30.585 be loyal[5457:227780] Resetting plugins due to page load.
+2015-04-30 10:53:31.211 be loyal[5457:227780] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Bundle/Application/9DC38DD9-2263-4C37-8D7B-1C1710E64315/be%20loyal.app/www/index.html
+2015-04-30 10:53:50.285 be loyal[5457:227780] Resetting plugins due to page load.
+2015-04-30 10:53:50.409 be loyal[5457:227780] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Bundle/Application/9DC38DD9-2263-4C37-8D7B-1C1710E64315/be%20loyal.app/www/loyalty-card.html
+2015-04-30 10:53:53.608 be loyal[5457:227780] Resetting plugins due to page load.
+2015-04-30 10:53:53.812 be loyal[5457:227780] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Bundle/Application/9DC38DD9-2263-4C37-8D7B-1C1710E64315/be%20loyal.app/www/index.html
+2015-04-30 10:54:07.016 be loyal[5457:228150] Terminating since there is no system app.
+2015-04-30 11:42:26.018 be loyal[6155:248279] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Data/Application/37408ECC-C3AC-4F46-9BAB-E08A5A391833/Library/Cookies/Cookies.binarycookies
+2015-04-30 11:42:26.382 be loyal[6155:248279] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-30 11:42:26.383 be loyal[6155:248279] Multi-tasking -> Device: YES, App: YES
+2015-04-30 11:42:26.411 be loyal[6155:248279] Unlimited access to network resources
+2015-04-30 11:42:26.432 be loyal[6155:248279] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-04-30 11:42:27.074 be loyal[6155:248279] Resetting plugins due to page load.
+2015-04-30 11:42:27.674 be loyal[6155:248279] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Bundle/Application/21CACB05-11F8-408A-8244-29C1CD97AB14/be%20loyal.app/www/index.html
+2015-04-30 11:42:38.023 be loyal[6155:248279] Resetting plugins due to page load.
+2015-04-30 11:42:38.146 be loyal[6155:248279] Finished load of: file:///Users/aldaypinheiro/Library/Developer/CoreSimulator/Devices/F1DD48AF-4069-4B8C-8945-E228B5A67669/data/Containers/Bundle/Application/21CACB05-11F8-408A-8244-29C1CD97AB14/be%20loyal.app/www/loyalty-card.html

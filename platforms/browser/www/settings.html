@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>be loyal</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+
+		<!-- nativeDroid core CSS -->
+		<link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+		<link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
+
+		<!-- nativeDroid: Color Schemes -->
+		<link rel="stylesheet" href="css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
+
+		<!-- jQuery / jQueryMobile Scripts -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+	<div data-role="page" data-theme='b'>
+		<div data-role="panel" data-display="push" id="left-menu" data-theme="b">
+			<ul data-role="listview">
+				<li data-icon='false'><a href="index.html" data-ajax="false"><i class='lIcon fa fa-home'></i>Home</a></li>
+			</ul>
+			<div data-role="collapsible" data-content-theme="b"  style="font-color: black;">
+				<h4>Add</h4>
+				<ul data-role="listview">
+					<li data-icon='false'>
+						<font color="#9c0"><a href="new-loyalty.html" data-ajax="false"><i class='lIcon fa fa-credit-card'></i>Loyalty Card</a></font>
+					</li>
+					<li data-icon='false'>
+						<font color="#9c0"><a href="new-coupon.html" data-ajax="false"><i class='lIcon fa fa-barcode'></i>Coupon</a></font>
+					</li>
+				</ul>
+			</div>
+			<ul data-role="listview">
+				<li data-icon='false'><a href="settings.html"><i class='lIcon fa fa-gears'></i>Settings</a></li>
+			</ul>
+		</div>
+
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+			<a href='#left-menu'><i class='fa fa-bars'></i></a>
+			<h2 style="text-align: center;">
+				be loyal
+				&nbsp;
+				<i style="font-size: 0.9em;" class='fa fa-paw'></i>
+			</h2>
+		</div>
+
+		<div data-role="content">
+			<form>
+				<ul data-role="listview" data-inset="true">
+					<li data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<legend>Save data/Backup:</legend>
+							<input type="checkbox" name="dropbox" id="dropbox">
+							<label for="dropbox">Dropbox</label>
+							<input type="checkbox" name="gdrive" id="gdrive">
+							<label for="gdrive">Google Drive</label>
+							<input type="checkbox" name="odrive" id="odrive">
+							<label for="odrive">One Drivre</label>
+						</fieldset>
+					</li>
+					<li data-role="fieldcontain">
+                        <label for="automatic-backup">Automatic Backup:</label>
+                        <select name="automatic-backup" id="automatic-backup" data-role="flipswitch">
+                            <option value="off">Off</option>
+                            <option value="on">On</option>
+                        </select>
+                    </li>
+					<li data-role="fieldcontain">
+						<label for="periodicity" class="select">Backup Periodicity:</label>
+						<select name="periodicity" id="periodicity" data-native-menu="true">
+							<option value="daily">Daily</option>
+							<option value="weekly">Weekly</option>
+							<option value="monthly">Monthly</option>
+						</select>
+					</li>
+					<li data-role="fieldcontain">
+						<label for="import">Import backup:</label>
+						<input type="file" name="import" id="import" value="" data-clear-btn="true">
+					</li>
+					<div align="center">
+						<li>
+							<button type="reset" data-inline='true'><i class='lIcon fa fa-times'></i>Reset</button>&nbsp;&nbsp;&nbsp;&nbsp;
+							<button id="submit" data-inline='true'><i class='lIcon fa fa-check'></i>Save</button>
+                        </li>
+					</div>
+				</ul>
+			</form>
+			<div class='inset'>
+				<h2>About</h2>
+				<div class='message info'>
+					<i class='fa fa-info'></i>
+					<p>be loyal&#169; 2015 - All rights reserved. <br />
+					Version 1.0</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
